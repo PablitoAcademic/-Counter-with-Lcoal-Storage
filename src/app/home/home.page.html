@@ -1,0 +1,42 @@
+<ion-header translucent="true">
+  <ion-toolbar class="toolbar-custom">
+    <ion-title>Contador - UTA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" class="background">
+
+  <div class="wrapper">
+
+    <div class="card">
+
+      <p class="label">Valor actual</p>
+
+      <div class="counter" [class.animate]="animar">
+        {{ contador }}
+      </div>
+
+      <div class="controls">
+
+        <button class="circle-btn up" (click)="incrementar()">
+          ↑
+        </button>
+
+        <button class="circle-btn down" (click)="decrementar()">
+          ↓
+        </button>
+
+      </div>
+
+      <button class="reset-btn" (click)="reset()">
+        Restablecer Contador
+      </button>
+
+    </div>
+
+  </div>
+  <div class="footer">
+    © {{ currentYear }} Jose Pablo Robles Huerta. Todos los derechos reservados.
+  </div>
+
+</ion-content>

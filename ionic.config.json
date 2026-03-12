@@ -1,0 +1,7 @@
+{
+  "name": "contadorApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
